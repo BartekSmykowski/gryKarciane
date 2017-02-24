@@ -1,0 +1,7 @@
+*.xml
+*.html
+*.iml
+*.txt
+*.png
+*.class
+out/*
