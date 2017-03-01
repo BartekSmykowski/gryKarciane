@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<GridPane alignment="CENTER" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.112"
+          xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.GameChooseController">
+    <columnConstraints>
+        <ColumnConstraints maxWidth="228.0" minWidth="195.0" prefWidth="207.0"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints/>
+    </rowConstraints>
+    <Pane prefWidth="249.0">
+        <HBox alignment="CENTER" layoutX="5.0" layoutY="14.0" prefHeight="55.0" prefWidth="198.0" spacing="30.0">
+            <Label text="Typ gry:"/>
+            <ChoiceBox fx:id="gameChoiceBox" value="Tysiąc">
+                <items>
+                    <FXCollections fx:factory="observableArrayList">
+                        <String fx:value="Wyścig"/>
+                        <String fx:value="Tysiąc"/>
+                        <String fx:value="Wybieraniec"/>
+                    </FXCollections>
+                </items>
+            </ChoiceBox>
+        </HBox>
+        <HBox alignment="CENTER" layoutX="-3.0" layoutY="59.0" prefHeight="55.0" prefWidth="214.0" spacing="30.0">
+            <Label text="Ilość graczy:"/>
+            <ChoiceBox fx:id="numberOfPlayersChoiceBox" value="3">
+                <items>
+                    <FXCollections fx:factory="observableArrayList">
+                        <String fx:value="2"/>
+                        <String fx:value="3"/>
+                        <String fx:value="4"/>
+                    </FXCollections>
+                </items>
+            </ChoiceBox>
+        </HBox>
+        <VBox alignment="CENTER" layoutX="55.0" layoutY="178.0" prefHeight="124.0" prefWidth="99.0" spacing="30.0">
+            <Button fx:id="beginButton" mnemonicParsing="false" onAction="#beginGame" text="Zacznij"/>
+            <Button fx:id="backToMenuButton" mnemonicParsing="false" onAction="#backToMenu" text="Cofnij"/>
+        </VBox>
+        <HBox fx:id="hBoxWithPlayerNamesTextAreas" layoutX="4.0" layoutY="136.0" prefHeight="55.0"
+              prefWidth="200.0"/>
+        <Label layoutX="60.0" layoutY="114.0" text="Imiona Graczy:"/>
+    </Pane>
+</GridPane>

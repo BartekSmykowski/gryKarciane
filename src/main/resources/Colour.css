@@ -1,0 +1,25 @@
+.root{
+    -fx-font-size: 10pt;
+    -fx-font-family: "Courier New";
+    -fx-base: rgb(250, 250, 0);
+    -fx-background: rgb(0, 10, 50);
+}
+
+.button{
+    -fx-color: rgb(0,50,200);
+    -fx-text-fill: rgb(50, 100, 50);
+}
+
+.choice-box{
+    -fx-color: rgb(0,50,200);
+    -fx-text-fill: rgb(50, 100, 50);
+}
+
+.table-view{
+  -fx-color: rgb(0,50,200);
+  -fx-text-fill: rgb(50, 100, 50);
+}
+
+.text-field{
+    -fx-control-inner-background: rgb(0,0,0);
+}
