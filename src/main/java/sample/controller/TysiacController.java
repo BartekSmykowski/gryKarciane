@@ -44,7 +44,7 @@ public class TysiacController {
         stage.show();
     }
 
-    public void setGame(Game game){
+    void setGame(Game game){
         this.game = game;
         scoresTable.setItems(game.getPoints());
         TableColumn<RoundScores, Integer>[] columns = (TableColumn<RoundScores, Integer>[]) new TableColumn[game.getNumberOfPlayers()];
